@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [project.scripts]
-pishro = "pishro_cli:main"
+pishro = "pishro_cli.main:app"
 
 [build-system]
 requires = ["hatchling"]
