@@ -1,0 +1,17 @@
+[project]
+name = "pishro-cli"
+version = "0.1.0"
+description = "Pishro is a deployment tool for docker swarm"
+readme = "README.md"
+requires-python = ">=3.13"
+
+dependencies = [
+    "typer>=0.15.2",
+]
+
+[project.scripts]
+pishro = "pishro_cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
