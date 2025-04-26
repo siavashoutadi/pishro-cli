@@ -13,10 +13,12 @@ def install_package(
     override_values_file: Path = typer.Option(
         None, help="Path to values file to override default values"
     ),
+    verbose: bool = typer.Option(False, help="Enable verbose output"),
 ):
     install_from_local(
         stack_name=stack_name,
         packages_dir=packages_path,
         package_name=name,
         override_values_file=override_values_file,
+        verbose=verbose,
     )
